@@ -3,7 +3,9 @@ import NavBar from "./components/NavBar";
 import "./App.css";
 import { Songs } from "./context";
 import DataSongs from "./data/songs.json";
-
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 function App() {
   const [song, setSong] = useState(DataSongs[0]);
   const handleSetSong = (idSong) => {
