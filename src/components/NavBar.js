@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 const NavBar = () => {
     return (
         <div className="navbar h-24 bg-slate-900 text-white leading-[6rem] text-xl justify-between">
-            <div className="app-header">
+            <div className="app-header hover:cursor-pointer">
                 <i className="fab fa-spotify pr-3"></i>Spotify 3.0
             </div>
             
@@ -22,7 +22,7 @@ const NavBar = () => {
                         <Link to="/about" className="text-white">About</Link>
                         </li>
                         <li className="mr-10">
-                        <Link to="/skills" className="text-white">Blogs</Link>
+                        <Link to="/blogs" className="text-white">Blogs</Link>
                         </li>
                         <li>
                         <Link to="/contact" className="text-white">Contact</Link>

@@ -6,6 +6,7 @@ import { Songs } from "./context";
 import DataSongs from "./data/songs.json";
 import Home from "./pages/Home"
 import Play from "./pages/Play"
+import Blogs from "./pages/Blogs"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/play" element={<Play />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
