@@ -13,7 +13,7 @@ const NavBar = () => {
                 <nav>
                     <ul className="flex justify-center">
                         <li className="mr-10">
-                        <Link to="/" className="text-white hover:text-pink">Home</Link>
+                        <Link to="/" className="text-white hover:text-red-600 active:text-red-600">Home</Link>
                         </li>
                         <li className="mr-10">
                         <Link to="/play" className="text-white">Play</Link>
@@ -31,7 +31,7 @@ const NavBar = () => {
                 </nav>
             </div>
             <div className="p-10">
-                <a href="https://www.github.com/trungkien8902" target="_blank" rel="noreferrer">
+                <a href="https://github.com/trungkien8902/Music-Player-App" target="_blank" rel="noreferrer">
                     <i className="fab fa-github"></i>
                 </a>
             </div>
