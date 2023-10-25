@@ -12,8 +12,8 @@ import Contact from "./pages/Contact"
 function App() {
   const [song, setSong] = useState(DataSongs[0]);
   const handleSetSong = (idSong) => {
-  const song = DataSongs.find((song) => song.id === idSong);
-  setSong(song);
+    const song = DataSongs.find((song) => song.id === idSong);
+    setSong(song);
   };
 
   return (

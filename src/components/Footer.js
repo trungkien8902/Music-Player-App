@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <div className="bg-cyan-950 w-100 p-16 text-white m-auto mt-10">
+    <div className="bg-cyan-950 w-100 p-16 text-white m-auto">
       <div className="flex">
         <div className="basis-1/2 pr-10">
           <div className="hover:cursor-pointer mb-6 text-4xl font-bold">
