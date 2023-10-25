@@ -3,6 +3,7 @@ import "./style.css"
 import bg from "./img/bg.png"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import Footer from "../components/Footer";
 
 export default function Home() {
       
@@ -28,6 +29,7 @@ export default function Home() {
         },
     ];
   return (
+    <>
         <div className="home-page text-white grid grid-cols-2">
             <div className="home-page-text">
                 <h2 className="text-5xl pb-4">This Month's</h2>
@@ -54,6 +56,8 @@ export default function Home() {
                 <img src={bg} alt="bg"/>
             </div>
         </div> 
+        <Footer />
+    </>
     );
 }
 

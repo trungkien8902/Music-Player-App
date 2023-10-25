@@ -1,28 +1,41 @@
 import React from "react";
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import Footer from "../components/Footer";
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
 export default function Blogs() {
   return (
-    <div>
-      <div className="p-4">
-        <h2 className="text-2xl font-bold mb-4">Blogs</h2>
-        <div className="p-4 rounded shadow hover:cursor-pointer bg-gray-200">
-          <h3 className="text-xl font-bold">Blog Title 1</h3>
-          <p>Published on: June 15, 2023</p>
-          <p>
-            This is the content of the first blog post. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div className="bg-white p-4 rounded shadow mt-4">
-          <h3 className="text-xl font-bold">Blog Title 2</h3>
-          <p>Published on: June 20, 2023</p>
-          <p>
-            This is the content of the second blog post. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        {/* Add more blog posts here */}
+    <>
+      <div className="w-10/12 m-auto mt-10">
+        <h2 className="text-center text-4xl font-bold mb-10 uppercase">Our Blogs</h2>
+        <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <Item>
+              <img src="https://icdn.dantri.com.vn/zoom/1200_630/2022/12/09/pepsi-ravolution-dantri-crop-1670550930172.jpeg" alt="blog"/>
+            </Item>
+          </Grid>
+          <Grid item xs={4}>
+            <Item>
+              <img src="https://icdn.dantri.com.vn/zoom/1200_630/2022/12/09/pepsi-ravolution-dantri-crop-1670550930172.jpeg" alt="blog"/>
+            </Item>
+          </Grid>
+          <Grid item xs={4}>
+            <Item>
+              <img src="https://icdn.dantri.com.vn/zoom/1200_630/2022/12/09/pepsi-ravolution-dantri-crop-1670550930172.jpeg" alt="blog"/>
+            </Item>
+          </Grid>
+        </Grid>
       </div>
-    </div>
+      <Footer/>
+    </>
   );
 }
