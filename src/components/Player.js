@@ -7,7 +7,7 @@ export default function Player() {
     const {song} = useContext(Songs)
   return (
     <div>
-        <AudioPlayer className='player' src={song.url} showSkipControls={true} showJumpControls={false} />
+        <AudioPlayer className='player' src={song.url} showSkipControls={true} showJumpControls={true} />
     </div>
   )
 }
