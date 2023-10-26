@@ -98,7 +98,7 @@ export default function Footer() {
           className="text-cyan-500"
           target="_blank"
           rel="noreferrer"
-          href="https://www.facebook.com/trungkien.8902/"
+          href="https://www.facebook.com/chich.cheo.001/"
         >
           Canh Duy
         </a>{" "}
@@ -107,7 +107,7 @@ export default function Footer() {
           className="text-cyan-500"
           target="_blank"
           rel="noreferrer"
-          href="https://www.facebook.com/trungkien.8902/"
+          href="https://www.facebook.com/3thang6/"
         >
           Huy Cong
         </a>
