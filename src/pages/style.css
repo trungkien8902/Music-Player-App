@@ -2,10 +2,6 @@
     background: rgb(0, 48, 75)
 }
 
-.home-page-text {
-    margin: 80px;
-}
-
 .home-page-img img{
     width: 600px;
     float: right;
@@ -20,4 +16,15 @@
 
 .btn-primary:hover {
     opacity: 0.9;
+}
+
+/* .event {
+    height: 1000px;
+    background: url(./img/bg.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+} */
+
+.get-ticket {
+    background-image: url(./img/extra.jpg);
 }

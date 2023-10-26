@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footer from '../components/Footer';
+import featured from './img/featured.png'
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -12,8 +13,9 @@ function ContactForm() {
 
   return (
     <>
-      <div className="max-w-md mx-auto mt-10">
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+      <img src={featured} alt='contact'/>
+      <div className="max-w-md mx-auto mt-24 mb-24">
+        <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
